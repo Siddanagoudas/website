@@ -1,0 +1,58 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="signin-signup">
+            <form action="#" class="sign-in-form">
+                <h2 class="title">Sign In</h2>
+                <div class="input-field">
+                    <img src="G:\website5\img\fb.png" />
+                    <img src="G:\website5\img\github.png" />
+                    <img src="G:\website5\img\google.png"  />
+                    <img src="G:\website5\img\linkedIn.png"/>
+                    <br>
+                    <span> use your email password</span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Username or Email" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <a href="#">Forgot Your Password?</a>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+            <div class="panels-container">
+                <div class="panel">
+                    <h3>Hello, Friend!</h3>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+             <!-- Overlay Section -->
+        <div class="toggle-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
