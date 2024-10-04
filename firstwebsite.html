@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title> harward university</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" inter-scale="1">
+    <style>
+        body {
+            margin:0%;
+            padding: 0%;
+        }
+        .container {
+            background-color: white;
+            overflow:hidden;
+            width: 100%;
+        }
+        .content {
+            display:flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        .image {
+            flex: 3;
+            text-align: center;
+        }
+        .image img {
+            max-width: 90%;
+            padding: 20px;
+           
+        }
+        .text {
+            flex: 3;
+            padding: 0 20px;
+           
+        }
+        .quote {
+            font-size: 40px;
+            font-style: italic;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .book-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding: 40px;
+           
+        }
+        .author {
+            font-style: italic;
+            margin-bottom:10px;
+            padding: 40px;
+            margin-top: -90px;
+        }
+        .cta {
+        
+            margin-top: -110px;
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 1px solid #333;
+            padding: 15px 25px;
+            border-radius: 4px;
+            text-align: center;
+            max-width: 250px;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .text1 h1 {
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 50px;
+        
+        }
+        .text1 p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin:50px;
+            display: flex;
+            margin-top: -77px;
+        }
+        .button {
+            background-color:#333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .button:hover {
+            background-color:black;
+        }
+        
+        .column {
+             float: left;
+             width: 30.33%;
+             padding: 10px;
+             cursor: pointer;
+             transition: width 2s, height 2s, transform 2s;
+        }
+        .column:hover {
+             content: counter(name);
+
+        }
+        
+
+    
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        hr.thin {
+            text-decoration: underline;
+            
+        }
+        .link:hover {
+            text-decoration-line: underline;
+            cursor: pointer;
+            text-decoration-thickness:1px ;
+            text-underline-offset: 2px;
+        }
+        .link1 {
+            text-decoration-line: underline;
+            cursor: pointer;
+            text-decoration-thickness:1px ;
+            text-underline-offset: 2px;
+        }
+        .link2:hover {
+            text-decoration-line: underline;
+            cursor: pointer;
+            text-decoration-thickness:0px ;
+            text-underline-offset: 4px;
+        }
+        .container1 {
+           position: relative;
+           text-align: center;
+           color: black;
+        }
+        .top-right {
+           position: absolute;
+           top: 8px;
+           right: 16px;
+        }
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+       .column:hover .overlay {
+          opacity: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="img/WhatsApp Image 2024-07-26 at 5.13.59 PM.jpeg" style="opacity: 0.6;;" >
+        <div class="top-right">
+            <ul>
+                <li>
+                    <a href="#" ><img src="img/search.png" width="45px" style="margin-right: 45px;">  </a>
+                    <a href="#"><img src="img/menu1.png" width="45px" style="margin-right: 30px;" >  </a>
+                </li>
+            </ul>
+        </div>
+        <div class="centered">
+            <div >
+                <h1 style="font-size: 50px;"> Book Recommendations </h1>
+                <p style="font-family: sans-serif;font-size: 18px;margin-top: -25px;">Get reading this summer with classic must-reads, titles from faculty authors,<br> and favorites from across the Harvard community.`</p>
+               </div>
+               <div style="float: left;margin-top: -496px;margin-left: -665px;">
+               <img src="img/Harvard_University_logo.svg.png" width="20%" height="10%">
+            </div>
+        </div>
+      </div>
+     
+        <div class="container">
+        <div class="row">
+            <div class="image">
+                <img src="img/1stimage.jpg" alt="Maria Tatar">
+            </div>
+            <div class="text">
+                <p class="quote" style="margin-top: 100px;">"It is not often that someone <br> comes along who can reinvent <br> fairy tales and reclaim their <br> magic."</p>
+                <h3 class="book-title" style="margin-top: -50px;font-family: sans-serif;margin-left: -45px; ">"The School for Good and Evil" series by Soman Chainani</h3>
+                <h3 class="author" style="font-weight: lighter;font-family: sans-serif;font-size:larger;margin-top:-20pxpx;margin-left: -37px;">Recommended by Maria Tatar, research professor of Germanic <br> languages and literatures and of folklore and mythology</h3>
+               <div style="margin-left: -10px;margin-top: -20px;"> <img src="img/w7ly9gyg.png" width="40px" style="margin-left: 20px;color:grey;cursor:pointer;margin-top: 20px;">
+                <h3  style="color: black;margin-left: 80px;margin-top:-40px;letter-spacing: 1px;cursor: pointer;;"> <a href="https://news.harvard.edu/gazette/story/2020/12/faculty-experts-and-expert-parents-recommend-gift-books-for-children/" style="color: black;text-decoration: none;">Explore more recommendations from <br> the Mittal Institute </a> </h3>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            
+            <div class="text" style="margin-left: 0px;">
+                <p class="quote"> It is a beautiful, evocative inter-generational saga of a family in Kerala, weaving together sociology, politics,and colonial history.”</p>
+                
+                <p class="book-title" style="margin-top: -50px;font-family: sans-serif;font-size:larger;margin-left: -28px; ">"Covenant of Water” by Abraham Verghese</p>
+                <p class="author" style="font-weight: lighter;font-family: sans-serif;font-size:large;margin-top:-80px;margin-left: -30px;">Recommended by Tarun Khanna, director of the Lakshmi Mittal  and Family South Asia Institute
+
+                </p>
+                <div style="margin-left: 0px;margin-top: -20px;"> <img src="img/w7ly9gyg.png" width="40px" style="margin-left: 20px;color:grey;cursor:pointer;margin-top: 20px;">
+                    <h3  style="color: black;margin-left: 80px;margin-top:-40px;letter-spacing: 1px;cursor: pointer;"> <a href="https://mittalsouthasiainstitute.harvard.edu/2024/05/summer-reading-2024/" style="color: black;text-decoration: none;">Explore more children's and young <br> adult books </a> </h3>
+                   </div>"
+            </div>
+            <div class="row">
+                <div class="image" style="margin-right: -20px;">
+                    <img src="img/Tarun-Khanna-square 1.jpg" alt="tarun-khanna" width="150%" height="0%">
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="image">
+                <img src="img/kamali_langdell_color-square.webp" alt="Kamali">
+            </div>
+            <div class="text">
+                <p class="quote">"I devoured it in record time this spring and have been recommending it to others ever since.”</p>
+                <p class="book-title" style="margin-top: -50px;font-family: sans-serif;font-size:larger;margin-left: -28px;">"“Journeys of the Mind: A Life in History” by Peter Brown</p>
+                <p class="author" style="font-family: sans-serif;font-size: larger;" >Recommended by Elizabeth Papp Kamali, professor of law</p>
+                <div style="margin-left: 0px;margin-top: -20px;"> <img src="img/w7ly9gyg.png" width="40px" style="margin-left: 20px;color:grey;cursor:pointer;margin-top: 20px;">
+                    <h3  style="color: black;margin-left: 80px;margin-top:-40px;letter-spacing: 1px;cursor: pointer;"> <a href="https://hls.harvard.edu/today/what-harvard-law-profs-are-reading-this-summer/" style="color: black;text-decoration: none;">Explore more picks from Hravard Law <br> school </a> </h3>
+                   </div>"
+            </div>
+        </div>
+    </div>
+    <iframe  style=float:right;margin-bottom:20px;margin-right:20px; width="560" height="315" src="https://www.youtube.com/embed/dNIjS1SLXGQ?si=Dmoy6P4ZFLnOy8un" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+    <div class="text1">
+                <h1>From the experts</h1>
+                <p>Matthew Noe, lead collection and knowledge management <br> librarian at Harvard Medical School Countway Library, shares why <br> “Shubeik Lubeik” by Deena Mohamed should be on everyone’s <br> summer reading list.</p>
+    </div>
+    <div class="container" style="background-color:black;">
+        <img src="img/heroesvillains.webp" width="600px" height="450px" style="margin: 25px;">
+        <div class="text" style="float: right; margin-right: 20px; margin-top: -400px; ">
+        <h1 style="font-size: 40px; color: white;">Heroes and villains</h1>
+        <p style="font-size: 20px; margin-top: -20px; color: white;">Literature is full of characters we love, and others we love to hate. <br> Harvard faculty share their favorite literary heroes and villains— <br>and some may surprise you.</p>
+        <button class="button"><a href="https://news.harvard.edu/gazette/story/2022/06/who-is-your-favorite-literary-hero-villain/" style="color: white;text-decoration: none;"> Meet their favorite characters</a> </button>
+        </div>
+    </div>
+    <div class="container" style="background-color:black;">
+        
+        <div class="text"; style="margin: 30px;margin-top: 230px;">
+        <h1 style="font-size: 40px; color: white;;">Life lessons</h1>
+        <p style="font-size: 20px; margin-top: -20px; color: white;">Harvard faculty share some of the books they say left them <br> transformed.</p>
+        <button class="button"> <a href="https://news.harvard.edu/gazette/story/2022/07/harvard-scholars-on-books-that-changed-their-lives/" style="color: white;text-decoration: none;">Discover The Life-Changing Work</a></button>
+        <img src="img/lifelessons.webp" width="600px" height="450px" style="float: right; margin-top: -310px;margin-right: 20px;position:static;">
+        </div>
+    </div>
+    <div style="background-color: black;margin-top: -18px;">
+        <p>i made it myself</p>
+    </div>
+    <div>
+        <h1 style="margin-left: 40px;font-size: 60px;font-family: sans-serif;font-weight:100;"> Meet the authors </h1>
+        <h3 style="float: right; margin-top: -70px;margin-right: 160px;"> Check out the latest titles from these Harvard authors.</h3>
+    </div>
+    <div class="row">
+        <div class="column">
+          <img src="img/mesuda.jpeg" width="100%" height="150%">
+          <div style="position: relative;font-size: 20px;">
+            <p class="overlay" style="position: absolute;font-size:20px;margin-top: -100px;margin-left: 15px;color:white;
+            text-shadow: 4px 4px 8px ;"> Certainly! Claire Messud is an American  writer and novelist. She has authored several  acclaimed novels, including “The Emperor’s  Children” and “The Woman.”   </p>
+          </div>
+          
+        </div>
+        <div class="column" >
+          <img src="img/anchon2.jpg" width="100%" height="150%">
+          <div style="position: relative;font-size: 20px;">
+            <p class="overlay" style="position: absolute;font-size:20px;margin-top: -100px;margin-left: 15px;color:white;
+            text-shadow: 4px 4px 8px ;"> Certainly! Archon Fung is the Winthrop Laflin McCormack Professor of Citizenship and Self-Government at the Harvard Kennedy School.  </p>
+          </div>
+          
+        </div>
+        <div class="column" >
+          <img src="img/tiya.jpeg" width="100%" height="150%">
+          <div style="position: relative;font-size: 20px;">
+            <p class="overlay"  style="position: absolute;font-size:20px;margin-top: -100px;margin-left: 15px;color:white;
+            text-shadow: 4px 4px 8px ;"> Certainly! Tiya Miles is an award-winning author, historian, and Professor at Harvard University. She holds the Michael Garvey Professor of History position. </p>
+          </div>
+          
+        </div>
+     
+    </div>
+    <div class="row">
+        <div class="column">
+          <img src="img/mattew1.jpg" width="100%" height="150%">
+          <div style="position: relative;font-size: 20px;">
+            <p class="overlay" style="position: absolute;font-size:20px;margin-top: -100px;margin-left: 15px;color:white;
+            text-shadow: 4px 4px 8px ;"> Certainly! Matthew Ichihashi Potts is the Plummer Professor of Christian Morals at Harvard Divinity School and serves as the Pusey Minister in the  Harvard University.   </p>
+          </div>
+          
+        </div>
+        <div class="column" >
+          <img src="img/emil1.jpg" width="100%" height="150%">
+          <div style="position: relative;font-size: 20px;">
+            <p class="overlay" style="position: absolute;font-size:20px;margin-top: -100px;margin-left: 15px;color:white;
+            text-shadow: 4px 4px 8px ;"> Certainly! Emiliana Vegas is a U.S.-based policy analyst, academic, and author. She holds the position of Professor of Practice at the Graduate School of Education.   </p>
+          </div>
+          
+        </div>
+        <div class="column" >
+          <img src="img/irvin1.jpg" width="100%" height="150%">
+          <div style="position: relative;font-size: 20px;">
+            <p class="overlay" style="position: absolute;font-size:20px;margin-top: -100px;margin-left: 15px;color:white;
+            text-shadow: 4px 4px 8px ;"> Certainly! Dr. Irvin Scott is a learner, leader, speaker, author, philanthropist, and Harvard educator. He joined the  Harvard Graduate School of Education in 2016.  </p>
+          </div>
+          
+        </div>
+     
+    </div>
+    
+    <div class="container" style="background-color: black;">
+        
+        <div class="text" style="margin: 40px;margin-top: 20px;">
+        <h1 style="font-size: 60px; color: white; float: left;">Purposeful reading</h1>
+        <p style="font-size: 20px; margin-top: 55px; color: white; float: right;margin-right: 30px;">Explore books written by experts who are tackling some of the <br> biggest issues facing our society today.</p>
+        </div>   
+    </div>
+      
+
+    
+    <div class="container" style="background-color: black;">
+        
+        
+        <div class="text";>
+        <h1 class="link" style="font-size: 25px;margin-left: 45px;margin-top: -14px; color: white; float: left;">Antiracism</h1>
+        <p style="font-size: 20px;margin-left: 440px;margin-top: 80px;  color: white;">Curated by the Institutional Antiracism and <br> Accountability Project, these 15 new titles help us <br> understand race and racism across healthcare, education, <br> sports, and beyond.</p>
+        <img src="img/1st.png" style="float: right;width: 200px; height:150px;margin-bottom: 400px;margin-right: 63px;margin-top: -130px;">
+        <hr class="thin" style="margin-top: -160px;">    
+    </div>   
+        
+    </div>
+    <div class="container" style="background-color:black;margin-top: -370px ;">
+        
+        
+        <div class="text" style="margin-top: 10px;">
+        <hr class="thin" style="margin-bottom:30px">
+        <h1 class="link" style="font-size: 25px;margin-left: 40px;margin-top: 0px; color: white; float: left;">Election and voting</h1>
+        <p style="font-size: 20px;margin-left: 440px;margin-top: 25px;  color: white;">This collection of must-reads showcases new ideas and <br> efforts to build a more inclusive democracy in the U.S.</p>
+        <img src="img/2nd.webp" style="float: right;width: 200px; height:150px;margin-bottom: 400px;margin-right: 70px;margin-top: -67px;">
+   
+    </div>   
+        
+    </div>
+    
+    <div class="container" style="background-color:black;margin-top: -390px ;">
+        
+        
+        <div class="text" style="margin-top: 10px;">
+        <hr class="thin" style="margin-bottom:30px">
+        <h1 class="link" style="font-size: 25px;margin-left: 40px;margin-top: 0px; color: white; float: left;">AI and democracy</h1>
+        <p style="font-size: 20px;margin-left: 440px;margin-top: 25px;  color: white;">As we enter election season, explore this mix of <br> foundational texts and new thinking on how AI may <br> impact democracy.</p>
+        <img src="img/4th.webp" style="float: right;width: 200px; height:150px;margin-bottom: 400px;margin-right: 70px;margin-top: -87px;">
+   
+    </div>   
+        
+    </div>
+    <div class="container" style=" background-color:black;margin-top: -380px;">
+        
+        
+        <div class="text" style="margin-top: 33px;">
+        <hr class="thin" style="margin-bottom:30px;">
+        <h1 class="link" style="font-size: 25px;margin-left: 40px;margin-top: 0px; color: white; float: left;">Gender equity</h1>
+        <p style="font-size: 20px;margin-left: 440px;margin-top: 15px;  color: white;">Here is a roundup of gender-focused books by Harvard <br> affiliates published in the last two years.</p>
+        <img src="img/5th2.jpg" style="float: right;width: 200px; height:150px;margin-bottom: 400px;margin-right: 70px;margin-top: -75px;">
+    </div>           
+    </div>
+    <div style=" background-color:white;margin-top: -350px;">
+        
+        <hr class="thin" style="margin-bottom:30px;text-decoration-color: black;">
+        <div  style="margin-top: 30px;">
+              
+    </div>           
+    </div>
+    
+     <div style="background-color: white;">
+        <h1 style="font-size: 60px;margin-top: -50px;font-weight: lighter;margin-left: 60px;"> For your to-read list</h1>
+        <p style="margin: 50px; font-size: 20px;margin-top: -40px;">
+            Check out even more recommendations from Harvard faculty, <br> students, and staff.
+        </p>
+        
+        <img src="img/readlist.webp" width="560px" height="400px" style="margin: 50px;margin-top:-20px;">
+     </div>
+     <div class="link1" style="float: right;margin-top: -540px;margin-right: 20px;">
+        <h1 style="margin-top: 0px;font-size: 35px;">Harvard Business school </h1>
+        <h1 style="margin-top: 40px;font-size: 35px;"> Harvard College</h1>
+        <h1 style="margin-top: 40px;font-size: 35px;"> Harvard Divinity School </h1>
+        <h1 style="margin-top: 40px;font-size: 35px;"> Harvard Graduate School of Design</h1>
+        <h1 style="margin-top: 40px;font-size: 35px;"> Harvard Graduate School of <br> education</h1>
+        <h1 style="margin-top: 40px;font-size: 35px;"> Salata Institute for Climate and <br> Sustainabity</h1>
+     </div>
+     <div style="margin-left: 60px;margin-top: 90px;">
+        <h5 style="margin:10px;font-weight: lighter;"> YOU MAY ALSO LIKE </h5>
+        <h1 style="font-size: 60px;font-family: sans-serif;font-weight: lighter;margin-top: 0px;"> Related In Focus <br> topics </h1>
+     </div>
+     <div class="link2" style="float: right; margin-right: 400px;margin-top: -230px;">
+        <h2> Poetry </h2>
+        <h2 style="margin-top: 33px;"> Performing Arts </h2>
+        <h2 style="margin-top: 27px;"> Language </h2>
+     </div>
+     <div style="background-color: black;margin-top: 200px;">
+        <ul style="font-weight: lighter; margin-left: 200px; margin-top: -70px;background-color: black;">
+            <li style="margin-left: -40px;font-size: larger;;">  Report Copyright Infringement </li>
+            <li style="margin-top: 15px;font-size:larger;;"> Report Security issue </li>
+            <li style="margin-top: 15px;font-size: larger;"> Trademark Notice </li>
+        </ul>
+
+
+     </div>
+     <div  style="background-color: black;color:white ;margin-top: -200px;" >
+        <h2 style="margin-left: 230px; margin-top: 130px;margin-bottom: 80px;"> Security & Brand </h2>
+        <ul class="link2" style=" margin-left: 200px; margin-top: -70px;">
+            <li style="margin-left: -40px;font-size: larger;color:grey;font-weight:lighter;text-decoration: none;"> <a href="https://www.harvard.edu/copyright-issue/" style="color:grey;text-decoration: none; ">Report Copyright Infringement</a></li>
+        
+            <li  style="margin-top: 15px;font-size:larger;color:grey;font-weight:lighter;"><a href="https://www.harvard.edu/security-issue/" style="color: gray;text-decoration: none;"> Report Security issue </a></li>
+            <li style="margin-top: 15px;font-size: larger;color:grey;font-weight:lighter;"><a href="https://trademark.harvard.edu/pages/trademark-noticee/" style="color: gray;text-decoration: none;">Trademark Notice </a></li>
+        </ul>
+        <h2 style="margin-left: 600px;margin-top: -150px;">website </a></h2>
+        <ul class="link2" style="margin-left: 570px;">
+            <li style="margin-top: -12px;font-size: larger;margin-left: -8px;color:grey;font-weight:lighter;"> <a href="https://accessibility.harvard.edu/" style="color: gray;text-decoration: none;"> Accessibility </a></li>
+            <li style="margin-top: 15px;margin-left: -40px;font-size: larger;color:grey;font-weight:lighter;"><a href="https://accessibility.huit.harvard.edu/digital-accessibility-policy/" style="color: gray;text-decoration: none;"> Digital Accessibility </a> </li>
+            <li style="margin-top: 15px;font-size: larger;margin-left: -30px;color:grey;font-weight:lighter;"> <a href="https://www.harvard.edu/privacy-statement/" style="color: gray;text-decoration: none;"> Privacy statement </a> </li>
+        </ul>
+        <h2 style="margin-left: 870px;margin-top: -147px;"> Get In Touch </h2>
+        <ul class="link2" style="margin-left: 840px;font-size: larger;">
+            <li  style="margin-top:-11px ;color:grey;font-weight:lighter;"> <a href="https://www.harvard.edu/contact-harvard/" style="color: gray;text-decoration: none;"> Contact Harvard </a> </li>
+            <li  style="margin-top: 15px;margin-left: -10px;color:grey;font-weight:lighter;"> <a href="https://www.harvard.edu/contact-harvard/" style="color: gray;text-decoration: none;"> Maps & Directions </a> </li>
+            <li  style="margin-top: 15px;margin-left: 40px;color:grey;font-weight:lighter;"> <a href="https://hr.harvard.edu/jobs/" style="color: gray;text-decoration: none;"> Jobs </a> </li>
+        </ul>
+     </div>
+     <div style="background-color: black;margin: -30px;">
+        <p>Companies across the globe have become more vulnerable to sudden geopolitical crises, unexpected competitors, <br>and natural disasters. We recently sat down with Robert S. Kaplan,<br> Marvin Bower Professor of Leadership Development, Emeritus, and Senior Fellow at HBS,<br> and Herman B. ("Dutch") Leonard, Eliot I. Snider and Family Professor of<br> Business Administration at HBS and George F. Baker, Jr. Professor of<br> Public Sector Management at HKS, to discuss how the Risk Management for <br> Leaders—Virtual program can help executives turn <br> unexpected risks into new business opportunities.
+        </p>
+     </div>
+     <div style="background-color: black; color: white;margin-top: -70px;">
+        
+            <img src="img/footer-logo.svg" width="300px" height="150px" style="margin-left: 500px;margin-top: -10px;">
+        <h3 style="margin-left: 90px;margin-top:-38px;font-weight: lighter;color: grey;"> Copyright © 2024 The President and Fellows of <br> Harvard College</h3>
+    <div style="margin-top:-65px;margin-left: 750px;cursor: pointer;">
+         <img src="img/Instagram-1.png" width="90px" height="50px" >
+            <img src="img/tiktok-1.png" width="90px" height="50px">
+            <img src="img/Linkedin-1.png" width="90px" height="50px" >
+            <img src="img/FB3.png" width="90px" height="50px">
+            <img src="img/youtube-1.png"width="90px" height="50px">
+    </div>
+        </div>
+        <div style="background-color: black;margin-top: -30px;">
+            <p> Companies across the globe have become more vulnerable to sudden geopolitical crises, unexpected competitors, <br>and natural disasters. We recently sat down with Robert S. Kaplan,<br> Marvin Bower Professor of Leadership Development, Emeritus, and Senior Fellow at HBS,<br> and Herman B. ("Dutch") Leonard, Eliot I. Snider and Family Professor of<br> Business Administration at HBS and George F. Baker, Jr. Professor of<br> Public Sector Management at HKS, to discuss how the Risk Management for <br> Leaders—Virtual program can help executives turn <br> unexpected risks into new business opportunities.</p>
+        </div>
+    </body>
+</html>
